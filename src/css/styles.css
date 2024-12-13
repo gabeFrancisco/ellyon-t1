@@ -1,5 +1,6 @@
 :root{
   --primary-color: #2d685b;
+  --primary-hover: #3b927f;
 }
 
 * {
@@ -26,7 +27,7 @@ body {
 }
 
 header {
-  background-color: #555;
+  background-color: #a1a1a12d;
   padding: 0.5rem;
   margin: 0rem 5rem 2rem 5rem;
   border-radius: 3rem;
@@ -36,7 +37,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(7px);
 }
 
 header ul{
@@ -49,10 +50,24 @@ header ul li{
   margin: 0.3rem 1rem 0.3rem 1rem;
 }
 
+#logo{
+  width: 7rem;
+  margin: 0.3rem 2rem 0 1rem;
+  height: auto;
+}
+
 .btn-primary{
   background-color: var(--primary-color);
   border-radius: 3rem;
   border: none;
   padding: 0.5rem 2rem 0.5rem 2rem;
   color: white;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-primary:hover{
+  background-color: var(--primary-hover);
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
 }
